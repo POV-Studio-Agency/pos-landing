@@ -5,8 +5,8 @@ Situs statis POSITIF yang siap dipublikasikan melalui GitHub Pages.
 ## Halaman
 
 - `index.html` — landing page
-- `features.html` — daftar fitur restoran dan retail
-- `pricing.html` — harga bulanan dan tahunan
+- `index.html#fitur` — fitur restoran dan retail dalam landing page
+- `index.html#paket` — harga bulanan dan tahunan dalam landing page
 - `privacy.html` — kebijakan privasi
 - `404.html` — halaman tidak ditemukan khusus GitHub Pages
 
