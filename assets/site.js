@@ -17,13 +17,13 @@ const billing = {
     value: 'Rp150.000',
     period: '/ bulan',
     note: 'Bayar bulanan, dapat dibatalkan sesuai ketentuan layanan.',
-    subject: 'Berlangganan POSITIF Bulanan',
+    plan: 'bulanan',
   },
   yearly: {
     value: 'Rp1.500.000',
     period: '/ tahun',
     note: 'Setara Rp125.000 per bulan — hemat Rp300.000 setahun.',
-    subject: 'Berlangganan POSITIF Tahunan',
+    plan: 'tahunan',
   },
 }
 
@@ -35,6 +35,6 @@ document.querySelectorAll('[data-billing]').forEach((button) => {
     document.getElementById('priceValue').textContent = data.value
     document.getElementById('pricePeriod').textContent = data.period
     document.getElementById('priceNote').textContent = data.note
-    document.getElementById('pricingCta').href = `mailto:halo@pospositif.com?subject=${encodeURIComponent(data.subject)}`
+    document.getElementById('pricingCta').href = `https://wa.me/6281529282474?text=${encodeURIComponent(`Halo POSITIF, saya ingin mulai berlangganan paket ${data.plan}. Mohon informasi langkah selanjutnya.`)}`
   })
 })
