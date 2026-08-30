@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <style>
-      :root { --navy:#123f5a; --navy-deep:#0b3047; --mint:#2ee59d; --mint-dark:#087b58; --ink:#10232d; --muted:#60727d; --line:#dce6e9; --soft:#f3f7f7; --white:#fff; --shadow:0 24px 60px rgba(7,42,62,.13); }
+      :root { --navy:#123f5a; --navy-deep:#0b3047; --mint:#2ee59d; --mint-dark:#087b58; --app-green:#00483d; --app-green-hover:#075c4d; --ink:#10232d; --muted:#60727d; --line:#dce6e9; --soft:#f3f7f7; --white:#fff; --shadow:0 24px 60px rgba(7,42,62,.13); }
       * { box-sizing:border-box; }
       html { scroll-behavior:smooth; scroll-padding-top:86px; }
       body { margin:0; color:var(--ink); background:var(--white); font-family:"Plus Jakarta Sans",sans-serif; -webkit-font-smoothing:antialiased; }
@@ -34,8 +34,10 @@
       .section-head.center .section-copy { margin-inline:auto; }
       .button { display:inline-flex; min-height:50px; align-items:center; justify-content:center; gap:9px; padding:0 22px; border:1px solid transparent; border-radius:12px; cursor:pointer; font-size:14px; font-weight:800; transition:transform .2s,background .2s,border-color .2s; }
       .button:hover { transform:translateY(-2px); }
-      .button-primary { color:var(--navy-deep); background:var(--mint); box-shadow:0 12px 26px rgba(46,229,157,.2); }
-      .button-primary:hover { background:#59ecb4; }
+      .button-primary { color:white; background:var(--app-green); box-shadow:0 12px 26px rgba(0,72,61,.24); }
+      .button-primary:hover { background:var(--app-green-hover); }
+      .hero .button-primary,.pricing-main .button-primary,.cta .button-primary { color:var(--navy-deep); background:var(--mint); border-color:transparent; box-shadow:0 12px 26px rgba(46,229,157,.2); }
+      .hero .button-primary:hover,.pricing-main .button-primary:hover,.cta .button-primary:hover { background:#59ecb4; }
       .button-outline { color:white; border-color:rgba(255,255,255,.35); background:rgba(255,255,255,.06); }
       .button-light { color:var(--navy-deep); background:white; border-color:var(--line); }
       .button svg { width:18px; height:18px; }
